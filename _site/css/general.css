@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/* CSS Document */
+	
+body {
+	background-image: url(../images/column.svg);
+	background-size: 100%;
+	min-width: 768px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.5rem;
+	opacity: .5; 
+}
+
+.baseline {
+	background-image: url(../images/baseline.svg);
+}
+
+p {
+	margin-bottom: 1.5rem;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+/* --------------------------------------------------------------------- Masthead */
+
+.masthead {
+	background-color: #F0F;
+	height: 4.5rem;
+	position: fixed;
+	width: 100%;
+	z-index: 100; /* Puts this emlement on top of the rest */
+}
+
+nav ul {
+	text-align: center;	
+}
+
+nav li {
+	display: inline;	
+}
+
+nav a {
+	display: inline-block;
+	margin: 1.5rem;
+	color: #FFF;
+	text-decoration: none;
+}
+
+/* --------------------------------------------------------------------- Content */
+
+.wrapper {
+	overflow: hidden; /* Will wrap around its children when they float */ 
+	padding-top: 4.5rem;
+}
+
+#content1, /* # hooks an ID */
+#content2,
+#content3,
+#content4 {
+	clear: both;   /* Will stack after each other if their children have floats */
+	padding: 6rem 10.25%;
+}
+
+#content1 {
+	background-color: #3FF;	/* etc. */
+}
+
+#content2 {
+	background-color: #0F0;
+}
+
+#content3 {
+	background-color: #FF0;
+}
+
+#content4 {
+	background-color: #069;
+}
+
+/* --------------------------------------------------------------------- Footer */
+
+.bottom {
+	background-color: #F0F;
+	height: 12rem;
+	text-align: center;
+	padding-top: 1.5rem;
+	
+}
+
+.bottom a {
+	color: #FFF;
+	text-decoration: none;
+}	
