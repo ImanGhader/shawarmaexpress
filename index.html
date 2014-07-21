@@ -1,65 +1,58 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en-ca">
 <head>
-<meta charset="UTF-8">
-<title>Tutorial / Scrolling Layout</title>
-<link href="css/reset.css" rel="stylesheet"> 
-<link href="css/general.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>{{page.title}} · Shawarma Express</title>
+ 		<link href="css/reset.css" rel="stylesheet">
+		<link href="css/general.css" rel="stylesheet">
+		<meta name="handheldfriendly" content="true">
+		<meta name="mobileoptimized" content="240">
+		<meta name="viewport" content="width=device-width,initial-scale=1" >
 </head>
 
 <body id="top">
-
-<!-- ///////////////////////////////////////////////////////////////////////// Masthead -->
-
-	<header class="masthead baseline">
-		
-		<nav>
-			
+	<header class="header">
+		<a href="#nav" class="nav-btn hide-text">Navigation</a>
+		<nav class="nav nav-top" data-state="collapsed">
 			<ul>
-				<li><a href="#content1">Content 1</a></li> <!-- # indicates it will link to the ID with that name -->
-				<li><a href="#content2">Content 2</a></li>
-				<li><a href="#content3">Content 3</a></li>
-				<li><a href="#content4">Content 4</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#menu">Menu</a></li>
+				<li><a href="#catering">catering</a></li>
+				<li><a href="#gallery">gallery</a></li>
+				<li><a href="#contact">contact</a></li>
 			</ul>
-		
 		</nav>
-	
 	</header>
 	
-	<div class="wrapper">
+	<main class="main">
+
+		<div id="about" class="baseline"> 
+		
+			<img class="logo" src="http://placehold.it/100x100" alt="Shawarma logo">
+
+			<h1>Shawarma Express</h1> 
+		
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet. Fusce condimentum varius est, et venenatis tellus</p>  
+	 
+		</div>
 	
 <!-- ///////////////////////////////////////////////////////////////////////// Content 1 -->
 		
-		<div id="content1" class="baseline"> <!-- ID's can only be used once in a document. Can have both ID & Class on same element -->
+		<div id="about" class="baseline"> 
 		
-			<h2>Content 1</h2> 
+			<h2>About</h2> 
 		
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet. Fusce condimentum varius est, et venenatis tellus tristique sed. Vestibulum id vestibulum est. Nam egestas bibendum lobortis. Donec sem nisi, convallis nec interdum non, eleifend mollis massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer feugiat eleifend vulputate. Proin fringilla rhoncus blandit. Donec condimentum consectetur varius. Fusce ultricies arcu velit, vel sollicitudin libero. Praesent blandit ligula id massa lacinia lobortis. Aliquam augue lacus, suscipit sit amet.</p>  
-						
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet. Fusce condimentum varius est, et venenatis tellus tristique sed. Vestibulum id vestibulum est. Nam egestas bibendum lobortis. Donec sem nisi, convallis nec interdum non, eleifend mollis massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer feugiat eleifend vulputate. Proin fringilla rhoncus blandit. Donec condimentum consectetur varius. Fusce ultricies arcu velit, vel sollicitudin libero. Praesent blandit ligula id massa lacinia lobortis. Aliquam augue lacus, suscipit sit amet.</p> 
-			
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet. Fusce condimentum varius est, et venenatis tellus tristique sed. Vestibulum id vestibulum est. Nam egestas bibendum lobortis. Donec sem nisi, convallis nec interdum non, eleifend mollis massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer feugiat eleifend vulputate. Proin fringilla rhoncus blandit. Donec condimentum consectetur varius. Fusce ultricies arcu velit, vel sollicitudin libero. Praesent blandit ligula id massa lacinia lobortis. Aliquam augue lacus, suscipit sit amet.</p> 
-			
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet. Fusce condimentum varius est, et venenatis tellus tristique sed. Vestibulum id vestibulum est. Nam egestas bibendum lobortis. Donec sem nisi, convallis nec interdum non, eleifend mollis massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer feugiat eleifend vulputate. Proin fringilla rhoncus blandit. Donec condimentum consectetur varius. Fusce ultricies arcu velit, vel sollicitudin libero. Praesent blandit ligula id massa lacinia lobortis. Aliquam augue lacus, suscipit sit amet.</p> 
-			
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet. Fusce condimentum varius est, et venenatis tellus tristique sed. Vestibulum id vestibulum est. Nam egestas bibendum lobortis. Donec sem nisi, convallis nec interdum non, eleifend mollis massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer feugiat eleifend vulputate. Proin fringilla rhoncus blandit. Donec condimentum consectetur varius. Fusce ultricies arcu velit, vel sollicitudin libero. Praesent blandit ligula id massa lacinia lobortis. Aliquam augue lacus, suscipit sit amet.</p> 
+	
 	 
 		</div> <!-- Content 1 Close -->
 		
 <!-- ///////////////////////////////////////////////////////////////////////// Content 2 -->
 		
-		<div id="content2" class="baseline">
+		<div id="menu" class="baseline">
 		
-			<h2>Content 2</h2> 
+			<h2>Menu</h2> 
 		
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet. Fusce condimentum varius est, et venenatis tellus tristique sed. Vestibulum id vestibulum est. Nam egestas bibendum lobortis. Donec sem nisi, convallis nec interdum non, eleifend mollis massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer feugiat eleifend vulputate. Proin fringilla rhoncus blandit. Donec condimentum consectetur varius. Fusce ultricies arcu velit, vel sollicitudin libero. Praesent blandit ligula id massa lacinia lobortis. Aliquam augue lacus, suscipit sit amet.</p>  
-						
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet. Fusce condimentum varius est, et venenatis tellus tristique sed. Vestibulum id vestibulum est. Nam egestas bibendum lobortis. Donec sem nisi, convallis nec interdum non, eleifend mollis massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer feugiat eleifend vulputate. Proin fringilla rhoncus blandit. Donec condimentum consectetur varius. Fusce ultricies arcu velit, vel sollicitudin libero. Praesent blandit ligula id massa lacinia lobortis. Aliquam augue lacus, suscipit sit amet.</p> 
-			
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet. Fusce condimentum varius est, et venenatis tellus tristique sed. Vestibulum id vestibulum est. Nam egestas bibendum lobortis. Donec sem nisi, convallis nec interdum non, eleifend mollis massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer feugiat eleifend vulputate. Proin fringilla rhoncus blandit. Donec condimentum consectetur varius. Fusce ultricies arcu velit, vel sollicitudin libero. Praesent blandit ligula id massa lacinia lobortis. Aliquam augue lacus, suscipit sit amet.</p> 
-			
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet. Fusce condimentum varius est, et venenatis tellus tristique sed. Vestibulum id vestibulum est. Nam egestas bibendum lobortis. Donec sem nisi, convallis nec interdum non, eleifend mollis massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer feugiat eleifend vulputate. Proin fringilla rhoncus blandit. Donec condimentum consectetur varius. Fusce ultricies arcu velit, vel sollicitudin libero. Praesent blandit ligula id massa lacinia lobortis. Aliquam augue lacus, suscipit sit amet.</p> 
 			
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet. Fusce condimentum varius est, et venenatis tellus tristique sed. Vestibulum id vestibulum est. Nam egestas bibendum lobortis. Donec sem nisi, convallis nec interdum non, eleifend mollis massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer feugiat eleifend vulputate. Proin fringilla rhoncus blandit. Donec condimentum consectetur varius. Fusce ultricies arcu velit, vel sollicitudin libero. Praesent blandit ligula id massa lacinia lobortis. Aliquam augue lacus, suscipit sit amet.</p> 
 	 
@@ -67,17 +60,10 @@
 		
 <!-- ///////////////////////////////////////////////////////////////////////// Content 3 -->
 		
-		<div id="content3" class="baseline"> 
+		<div id="catering" class="baseline"> 
 		
-			<h2>Content 3</h2> 
+			<h2>Catering</h2> 
 		
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet. Fusce condimentum varius est, et venenatis tellus tristique sed. Vestibulum id vestibulum est. Nam egestas bibendum lobortis. Donec sem nisi, convallis nec interdum non, eleifend mollis massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer feugiat eleifend vulputate. Proin fringilla rhoncus blandit. Donec condimentum consectetur varius. Fusce ultricies arcu velit, vel sollicitudin libero. Praesent blandit ligula id massa lacinia lobortis. Aliquam augue lacus, suscipit sit amet.</p>  
-						
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet. Fusce condimentum varius est, et venenatis tellus tristique sed. Vestibulum id vestibulum est. Nam egestas bibendum lobortis. Donec sem nisi, convallis nec interdum non, eleifend mollis massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer feugiat eleifend vulputate. Proin fringilla rhoncus blandit. Donec condimentum consectetur varius. Fusce ultricies arcu velit, vel sollicitudin libero. Praesent blandit ligula id massa lacinia lobortis. Aliquam augue lacus, suscipit sit amet.</p> 
-			
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet. Fusce condimentum varius est, et venenatis tellus tristique sed. Vestibulum id vestibulum est. Nam egestas bibendum lobortis. Donec sem nisi, convallis nec interdum non, eleifend mollis massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer feugiat eleifend vulputate. Proin fringilla rhoncus blandit. Donec condimentum consectetur varius. Fusce ultricies arcu velit, vel sollicitudin libero. Praesent blandit ligula id massa lacinia lobortis. Aliquam augue lacus, suscipit sit amet.</p> 
-			
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet. Fusce condimentum varius est, et venenatis tellus tristique sed. Vestibulum id vestibulum est. Nam egestas bibendum lobortis. Donec sem nisi, convallis nec interdum non, eleifend mollis massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer feugiat eleifend vulputate. Proin fringilla rhoncus blandit. Donec condimentum consectetur varius. Fusce ultricies arcu velit, vel sollicitudin libero. Praesent blandit ligula id massa lacinia lobortis. Aliquam augue lacus, suscipit sit amet.</p> 
 			
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet. Fusce condimentum varius est, et venenatis tellus tristique sed. Vestibulum id vestibulum est. Nam egestas bibendum lobortis. Donec sem nisi, convallis nec interdum non, eleifend mollis massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer feugiat eleifend vulputate. Proin fringilla rhoncus blandit. Donec condimentum consectetur varius. Fusce ultricies arcu velit, vel sollicitudin libero. Praesent blandit ligula id massa lacinia lobortis. Aliquam augue lacus, suscipit sit amet.</p> 
 	 
@@ -85,18 +71,21 @@
 
 <!-- ///////////////////////////////////////////////////////////// content 4 -->
 
-		<div id="content4" class="baseline"> 
+		<div id="gallery" class="baseline"> 
 		
-			<h2>Content 4</h2> 
+			<h2>Gallery</h2> 
 		
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet. Fusce condimentum varius est, et venenatis tellus tristique sed. Vestibulum id vestibulum est. Nam egestas bibendum lobortis. Donec sem nisi, convallis nec interdum non, eleifend mollis massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer feugiat eleifend vulputate. Proin fringilla rhoncus blandit. Donec condimentum consectetur varius. Fusce ultricies arcu velit, vel sollicitudin libero. Praesent blandit ligula id massa lacinia lobortis. Aliquam augue lacus, suscipit sit amet.</p>  
-						
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet. Fusce condimentum varius est, et venenatis tellus tristique sed. Vestibulum id vestibulum est. Nam egestas bibendum lobortis. Donec sem nisi, convallis nec interdum non, eleifend mollis massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer feugiat eleifend vulputate. Proin fringilla rhoncus blandit. Donec condimentum consectetur varius. Fusce ultricies arcu velit, vel sollicitudin libero. Praesent blandit ligula id massa lacinia lobortis. Aliquam augue lacus, suscipit sit amet.</p> 
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet. Fusce condimentum varius est, et venenatis tellus tristique sed. Vestibulum id vestibulum est. Nam egestas bibendum lobortis. Donec sem nisi, convallis nec interdum non, eleifend mollis massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer feugiat eleifend vulputate. Proin fringilla rhoncus blandit. Donec condimentum consectetur varius. Fusce ultricies arcu velit, vel sollicitudin libero. Praesent blandit ligula id massa lacinia lobortis. Aliquam augue lacus, suscipit sit amet.</p>
 			
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet. Fusce condimentum varius est, et venenatis tellus tristique sed. Vestibulum id vestibulum est. Nam egestas bibendum lobortis. Donec sem nisi, convallis nec interdum non, eleifend mollis massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer feugiat eleifend vulputate. Proin fringilla rhoncus blandit. Donec condimentum consectetur varius. Fusce ultricies arcu velit, vel sollicitudin libero. Praesent blandit ligula id massa lacinia lobortis. Aliquam augue lacus, suscipit sit amet.</p> 
-			
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet. Fusce condimentum varius est, et venenatis tellus tristique sed. Vestibulum id vestibulum est. Nam egestas bibendum lobortis. Donec sem nisi, convallis nec interdum non, eleifend mollis massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer feugiat eleifend vulputate. Proin fringilla rhoncus blandit. Donec condimentum consectetur varius. Fusce ultricies arcu velit, vel sollicitudin libero. Praesent blandit ligula id massa lacinia lobortis. Aliquam augue lacus, suscipit sit amet.</p> 
-			
+		</div>
+
+
+<!-- ///////////////////////////////////////////////////////////// content 5 -->
+
+		<div id="contact" class="baseline"> 
+		
+			<h2>Contact</h2> 
+		
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet. Fusce condimentum varius est, et venenatis tellus tristique sed. Vestibulum id vestibulum est. Nam egestas bibendum lobortis. Donec sem nisi, convallis nec interdum non, eleifend mollis massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer feugiat eleifend vulputate. Proin fringilla rhoncus blandit. Donec condimentum consectetur varius. Fusce ultricies arcu velit, vel sollicitudin libero. Praesent blandit ligula id massa lacinia lobortis. Aliquam augue lacus, suscipit sit amet.</p>
 			
 		</div>
@@ -110,6 +99,6 @@
 		<a href="#top">Return to Top</a>
 	
 	</footer>	
-
+<script src="js/nav.js"></script>
 </body>
 </html>
