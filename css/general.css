@@ -17,25 +17,36 @@ html{
 
 body {
 	background: url('../images/bg.png') repeat right top;
-	font-family: Arial, Helvetica, sans-serif;
-	line-height: 1.5rem;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.2rem;
 }
 
-.main {
-	width: 90%;
-}
 
 p {
 	margin-bottom: 1.5rem;
+	font-size: 0.9rem;
 }
 
-h2 {
-	font-size: 1.5rem;
-	margin-bottom: 1.5rem;
+.main {
+	width: 100%;
+	margin: 0 0;
 }
 
 img {
 	width: 100%;
+}
+
+/*------------------------------------------------ Header*/
+
+.h1 {
+	width: 90%;
+	padding: 1rem 0.9rem;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+header {
+	background-color: #000;
 }
 
 .hide-text {
@@ -44,28 +55,16 @@ img {
 	overflow: hidden;
 }
 
-/*.masthead {
-	background-color: #F0F;
-	height: 4.5rem;
-	position: fixed;
-	width: 100%;
-	z-index: 100; /* Puts this emlement on top of the rest
-}*/
-
-header {
-	background-color: rgba(0,0,0,0.9);
-	overflow: hidden;
-	color: #fff;
-}
-
 .nav-btn,
 .nav-btn:link,
-.nav-btn:visited{
+.nav-btn:visited {
 	display: block;
 	height: 40px;
 	width: 40px;
-	position: relative;
+	position: absolute;
 	padding: 1rem;
+	right:5%;
+	top: 7px;
 	
 	background: #000 url('../images/nav-icon.svg') no-repeat center center;
 	/* background-color || background-image || background-repeat || background-position*/
@@ -77,19 +76,35 @@ header {
 	background-color: #ccc;
 }
 
+.nav li,
+.nav li:link,
+.nav li:visited {
+	display: inline;
+	float: left;
+}
+
 .nav a, 
 .nav a:link,
 .nav a:visited{
+	font-size: 0.8rem;
 	display: block;
-	padding: 1rem;
-	text-align:center;
-	color: #fff;
+	text-align: center;
+	width: 80px;
+	padding: 0.5rem 0;
+	color: #e6b62b;
 	text-decoration: none;
 	background-color: #000;
-	border-top: 1px solid #fff;
+	border-top: 1px solid #e6b62b;
+	text-transform: uppercase;
+	font-weight: 300;
 	/* border-width || border-style || border-color */
 }
 
+.nav a:hover,
+.nav a:focus,
+.nav a:active{
+	background-color: #000;
+}
 
 /* Toggle Nav Styles*/
 
@@ -105,8 +120,36 @@ header {
 /* --------------------------------------------- Home */
 
 .logo {
-	width: 10%;
+	width: 100%;
+	max-width: 40%;
+	margin: 7rem 4rem;
 }
+
+.home {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	overflow: auto;
+	background-image: url(../images/home.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding: 2rem 1rem;
+}
+
+.home-text{
+	padding: 2rem 1rem 0 1rem;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Didact Gothic', sans-serif;
+	font-size: 2rem;
+	text-transform: uppercase;
+	line-height: 2rem;
+	margin-bottom: 1rem;
+}
+
 /* --------------------------------------------------------------------- Content */
 
 .wrapper {
