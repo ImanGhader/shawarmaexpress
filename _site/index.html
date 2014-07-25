@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Shawarma Express</title>
+		<link rel="stylesheet" href="flexslider/css/flexslider.css" type="text/css" media="screen" />
+
+  		<link href='http://fonts.googleapis.com/css?family=Didact+Gothic|Roboto:100,400,300,500,700,300italic' rel='stylesheet' type='text/css'>	
+ 		<link href="css/reset.css" rel="stylesheet">
+		<link href="css/general.css" rel="stylesheet">
+		<meta name="handheldfriendly" content="true">
+		<meta name="mobileoptimized" content="240">
+		<meta name="viewport" content="width=device-width,initial-scale=1" >
+</head>
+
+<body id="top">
+	<header>
+		<div class="fixed-header">
+			<h3>Shawarma Express</h3> 
+			<a href="#top" class="top-btn hide-text">Top</a>
+		</div>
+
+		<nav class="nav">
+			<ul>
+				<li><a href="#home">Home</a></li>		
+				<li><a href="#about">About</a></li>
+				<li><a href="#menu">Menu</a></li>
+				<li><a href="#catering">Catering</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main class="main">
+
+		<div id="home"> 
+		
+			<img class="logo" src="http://placehold.it/100x100" alt="Shawarma logo"> 
+	 
+		</div>
+
+		<div class="div-margin">
+
+			<h1> Shawarma Express</h1>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet. Fusce condimentum varius est, et venenatis tellus</p> 
+		</div>
+	
+<!-- ///////////////////////////////////////////////////////////////////////// About -->
+		
+		<div id="about"> 
+	
+			<h2>About</h2> 
+			
+			<img src="../images/about.jpg" alt="Chef's Image">
+			
+			<div class="div-margin">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet.</p> 
+
+				<a class="return-top" href="#top">return to top</a>
+	 		</div>
+		</div> <!-- Content 1 Close -->
+		
+<!-- ///////////////////////////////////////////////////////////////////////// Menu -->
+		
+		<div id="menu">
+		 
+			<h2>Menu</h2> 
+
+			<img src="../images/menu.jpg" alt="Image of Sandwich">
+
+			<div class="div-margin">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris.</p> 
+		 
+				<a class="return-top" href="#top">return to top</a>
+			</div>
+		</div> <!-- Content 2 Close -->
+		
+<!-- ///////////////////////////////////////////////////////////////////////// Catering -->
+		
+		<div id="catering"> 
+		
+			<h2>Catering</h2> 
+			
+			<img src="../images/catering.jpg" alt="Catering Plate samples" />
+
+			<div class="div-margin"> 
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet. Fusce condimentum varius est, et venenatis.</p> 
+
+				<a class="return-top" href="#top">return to top</a>
+	 		</div>
+		</div> <!-- Content 3 Close -->
+
+<!-- ///////////////////////////////////////////////////////////// Gallery -->
+
+		<section class="slider">
+	        <div class="flexslider">
+	          <ul class="slides">
+	            <li>
+	  	    	    <img src="../images/gallery.jpg" />
+	  	    		</li>
+	  	    		<li>
+	  	    	    <img src="../images/gallery.jpg" />
+	  	    		</li>
+	  	    		<li>
+	  	    	    <img src="../images/gallery.jpg" />
+	  	    		</li>
+	  	    		<li>
+	  	    	    <img src="../images/gallery.jpg" />
+	  	    		</li>
+	  	    		<li>
+	  	    	    <img src="../images/gallery.jpg" />
+	  	    		</li>
+	  	    		<li>
+	  	    	    <img src="../images/gallery.jpg" />
+	  	    		</li>
+	  	    		<li>
+	  	    	    <img src="../images/gallery.jpg" />
+	  	    		</li>
+	  	    		<li>
+	  	    	    <img src="../images/gallery.jpg" />
+	  	    		</li>
+	          </ul>
+	        </div>
+      </section>
+
+       <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+  <!-- FlexSlider -->
+  <script defer src="flexslider/js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+<!-- ///////////////////////////////////////////////////////////// Contact -->
+
+		<div id="contact"> 
+		
+			<h2>Contact</h2> 
+			
+			<img src="../images/mobile-contact.jpg" alt="Google Map" />
+
+			<!--<img src="../images/contact.jpg" alt="Google Map" />-->
+
+			<div class="div-margin">
+				<p> Right across from Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur.</p>
+				<p class="contact">Shawarmaexpress@gmail.com<br>119 Slater St, Ottawa<br>ON K1P 5H2<br>(613) 232-2189</p>
+			</div>
+		</div>
+	
+	</div> <!-- Wrapper Close -->
+
+<!-- ///////////////////////////////////////////////////////////////////////// Footer -->
+
+	<footer class="footer">
+
+		<p>© Shawarma Express 2014 by <a href="http://behance.net/imanghader"> IG </a></p> 
+	
+	</footer>	
+<script src="js/nav.js"></script>
+</body>
+</html>
