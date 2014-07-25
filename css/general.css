@@ -44,6 +44,15 @@ h3 {
 header {
 	background-color: #000;
 	width: 100%;
+	overflow: hidden;
+}
+
+.fixed-header{
+	position: fixed;
+	display: block;
+	background-color: #000;
+	width: 100%;
+	z-index: 100;
 }
 
 .hide-text {
@@ -52,27 +61,32 @@ header {
 	overflow: hidden;
 }
 
-.nav-btn,
-.nav-btn:link,
-.nav-btn:visited {
+.top-btn,
+.top-btn:link,
+.top-btn:visited {
 	display: block;
 	height: 40px;
 	width: 40px;
 	position: absolute;
 	padding: 1rem;
 	right:5%;
-	top: 7px;
+	top: 0px;
 	
-	background: #000 url('../images/nav-icon.svg') no-repeat center center;
+	background: #000 url('../images/top-btn.svg') no-repeat center center;
 	/* background-color || background-image || background-repeat || background-position*/
 }
 
-.nav-btn:hover,
-.nav-btn:focus,
-.nav-btn:active{
-	background-color: #ccc;
+.top-btn:hover,
+.top-btn:focus,
+.top-btn:active{
+	background-color: #A37A00;
 }
 
+
+.nav {
+	padding: 3rem 0 0 0;
+	width: 100%;
+}
 .nav li,
 .nav li:link,
 .nav li:visited {
@@ -92,7 +106,7 @@ header {
 	color: #e6b62b;
 	text-decoration: none;
 	background-color: #000;
-	border-top: 1px solid #e6b62b;
+	border-top: 1px solid #A37A00;
 	text-transform: uppercase;
 	font-weight: 300;
 	/* border-width || border-style || border-color */
@@ -101,7 +115,7 @@ header {
 .nav a:hover,
 .nav a:focus,
 .nav a:active{
-	background-color: #a4a4a4;
+	background-color: #A37A00;
 }
 
 /* Toggle Nav Styles*/
@@ -184,31 +198,13 @@ p {
 	margin: 1rem 2rem;
 }
 
-/*-------------------------------------------------------------- Gallery*/
+/*-------------------------------------------------------------- Contact*/
 
-@keyframes slidy {
-	0% { left: 0%; }
-	20% { left: 0%; }
-	25% { left: -100%; }
-	45% { left: -100%; }
-	50% { left: -200%; }
-	70% { left: -200%; }
-	75% { left: -300%; }
-	95% { left: -300%; }
-	100% { left: -400%; }
-}
-
-body { margin: 0; } 
-div#slider { overflow: hidden; }
-div#slider figure img { width: 20%; float: left; }
-div#slider figure { 
-  position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  text-align: left;
-  font-size: 0;
-  animation: 30s slidy infinite; 
+.contact {
+	text-transform: uppercase;
+	font-size: 1rem;
+	line-height: 1.4rem;
+	font-weight: 400;
 }
 
 
@@ -230,15 +226,19 @@ div#slider figure {
 
 /* --------------------------------------------------------------------- Footer */
 
-.bottom {
-	background-color: #F0F;
-	height: 12rem;
-	text-align: center;
-	padding-top: 1.5rem;
-	
+.footer{
+	background-color: #000;
+	text-align: right;
+	padding: 1rem;
+	color: #fff;
+	text-transform: uppercase;
 }
 
-.bottom a {
-	color: #FFF;
-	text-decoration: none;
+.footer p {
+	margin-bottom:  0;
+}
+
+.footer a {
+	text-decoration: underline;
+	color: #fff;
 }	

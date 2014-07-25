@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Shawarma Express</title>
+		<link rel="stylesheet" href="flexslider/css/flexslider.css" type="text/css" media="screen" />
+
   		<link href='http://fonts.googleapis.com/css?family=Didact+Gothic|Roboto:100,400,300,500,700,300italic' rel='stylesheet' type='text/css'>	
  		<link href="css/reset.css" rel="stylesheet">
 		<link href="css/general.css" rel="stylesheet">
@@ -13,9 +15,12 @@
 
 <body id="top">
 	<header>
-		<h3>Shawarma Express</h3> 
-		<a href="#nav" class="nav-btn hide-text">Navigation</a>
-		<nav class="nav nav-top" data-state="expanded">
+		<div class="fixed-header">
+			<h3>Shawarma Express</h3> 
+			<a href="#top" class="top-btn hide-text">Top</a>
+		</div>
+
+		<nav class="nav">
 			<ul>
 				<li><a href="#home">Home</a></li>		
 				<li><a href="#about">About</a></li>
@@ -42,7 +47,7 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet. Fusce condimentum varius est, et venenatis tellus</p> 
 		</div>
 	
-<!-- ///////////////////////////////////////////////////////////////////////// Content 1 -->
+<!-- ///////////////////////////////////////////////////////////////////////// About -->
 		
 		<div id="about"> 
 	
@@ -57,7 +62,7 @@
 	 		</div>
 		</div> <!-- Content 1 Close -->
 		
-<!-- ///////////////////////////////////////////////////////////////////////// Content 2 -->
+<!-- ///////////////////////////////////////////////////////////////////////// Menu -->
 		
 		<div id="menu">
 		 
@@ -72,13 +77,13 @@
 			</div>
 		</div> <!-- Content 2 Close -->
 		
-<!-- ///////////////////////////////////////////////////////////////////////// Content 3 -->
+<!-- ///////////////////////////////////////////////////////////////////////// Catering -->
 		
-		<div id="catering" class="baseline"> 
+		<div id="catering"> 
 		
 			<h2>Catering</h2> 
 			
-			<img src="../images/catering.jpg" alt="Catering Plate samples">
+			<img src="../images/catering.jpg" alt="Catering Plate samples" />
 
 			<div class="div-margin"> 
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet. Fusce condimentum varius est, et venenatis.</p> 
@@ -87,46 +92,83 @@
 	 		</div>
 		</div> <!-- Content 3 Close -->
 
-<!-- ///////////////////////////////////////////////////////////// content 4 -->
+<!-- ///////////////////////////////////////////////////////////// Gallery -->
 
-		<div id="gallery" class="baseline"> 
-		
-			<h2>Gallery</h2> 
-		
-			<div id="slider">
-				<figure>
-					<img src="http://demosthenes.info/assets/images/austin-fireworks.jpg" alt="">
-					<img src="http://demosthenes.info/assets/images/taj-mahal.jpg" alt="">
-					<img src="http://demosthenes.info/assets/images/ibiza.jpg" alt="">
-					<img src="http://demosthenes.info/assets/images/ankor-wat.jpg" alt="">
-					<img src="http://demosthenes.info/assets/images/austin-fireworks.jpg" alt="">
-				</figure>
-			</div>
+		<section class="slider">
+	        <div class="flexslider">
+	          <ul class="slides">
+	            <li>
+	  	    	    <img src="../images/gallery.jpg" />
+	  	    		</li>
+	  	    		<li>
+	  	    	    <img src="../images/gallery.jpg" />
+	  	    		</li>
+	  	    		<li>
+	  	    	    <img src="../images/gallery.jpg" />
+	  	    		</li>
+	  	    		<li>
+	  	    	    <img src="../images/gallery.jpg" />
+	  	    		</li>
+	  	    		<li>
+	  	    	    <img src="../images/gallery.jpg" />
+	  	    		</li>
+	  	    		<li>
+	  	    	    <img src="../images/gallery.jpg" />
+	  	    		</li>
+	  	    		<li>
+	  	    	    <img src="../images/gallery.jpg" />
+	  	    		</li>
+	  	    		<li>
+	  	    	    <img src="../images/gallery.jpg" />
+	  	    		</li>
+	          </ul>
+	        </div>
+      </section>
 
-			<a class="return-top" href="#top">return to top</a>
-			
-		</div>
+       <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
 
+  <!-- FlexSlider -->
+  <script defer src="flexslider/js/jquery.flexslider.js"></script>
 
-<!-- ///////////////////////////////////////////////////////////// content 5 -->
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
 
-		<div id="contact" class="baseline"> 
+<!-- ///////////////////////////////////////////////////////////// Contact -->
+
+		<div id="contact"> 
 		
 			<h2>Contact</h2> 
-		
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet. Fusce condimentum varius est, et venenatis tellus tristique sed. Vestibulum id vestibulum est. Nam egestas bibendum lobortis. Donec sem nisi, convallis nec interdum non, eleifend mollis massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer feugiat eleifend vulputate. Proin fringilla rhoncus blandit. Donec condimentum consectetur varius. Fusce ultricies arcu velit, vel sollicitudin libero. Praesent blandit ligula id massa lacinia lobortis. Aliquam augue lacus, suscipit sit amet.</p>
-
-			<a class="return-top" href="#top">return to top</a>
 			
+			<img src="../images/mobile-contact.jpg" alt="Google Map" />
+
+			<!--<img src="../images/contact.jpg" alt="Google Map" />-->
+
+			<div class="div-margin">
+				<p> Right across from Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur.</p>
+				<p class="contact">Shawarmaexpress@gmail.com<br>119 Slater St, Ottawa<br>ON K1P 5H2<br>(613) 232-2189</p>
+			</div>
 		</div>
 	
 	</div> <!-- Wrapper Close -->
 
 <!-- ///////////////////////////////////////////////////////////////////////// Footer -->
 
-	<footer class="bottom baseline">
-	
-		<a href="#top">Return to Top</a>
+	<footer class="footer">
+
+		<p>© Shawarma Express 2014 by <a href="http://behance.net/imanghader"> IG </a></p> 
 	
 	</footer>	
 <script src="js/nav.js"></script>
