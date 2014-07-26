@@ -53,7 +53,7 @@
 	
 			<h2>About</h2> 
 			
-			<img src="../about.jpg" alt="Chef's Image">
+			<img src="../images/about.jpg" alt="Chef's Image">
 			
 			<div class="div-margin">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet.</p> 
@@ -68,10 +68,51 @@
 		 
 			<h2>Menu</h2> 
 
-			<img src="../menu.jpg" alt="Image of Sandwich">
+			<img src="images/menu.jpg" alt="Image of Sandwich">
 
 			<div class="div-margin">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris.</p> 
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris.</p>
+
+		      <section class="slider">
+		        <div class="thumb-flexslider">
+		          <ul class="slides">
+		            <li data-thumb="images/menu.jpg">
+		  	    		<img src="images/menu.jpg" />
+		  	    	</li>
+		  	    	<li data-thumb="images/menu.jpg">
+		  	    		<img src="images/menu.jpg" />
+		  	    	</li>
+		  	    	<li data-thumb="images/menu.jpg">
+		  	    	   <img src="images/menu.jpg" />
+		  	    	</li>
+		  	    	<li data-thumb="images/menu.jpg">
+		  	    	   <img src="images/menu.jpg" />
+		  	    	</li>
+		          </ul>
+		        </div>
+		      </section>
+
+		        <!-- jQuery -->
+			  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+			  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+			  <!-- FlexSlider -->
+			  <script defer src="../jquery.flexslider.js"></script>
+
+			  <script type="text/javascript">
+			    $(function(){
+			      SyntaxHighlighter.all();
+			    });
+			    $(window).load(function(){
+			      $('.thumb-flexslider').flexslider({
+			        animation: "fade",
+			        controlNav: "thumbnails",
+			        start: function(slider){
+			          $('body').removeClass('loading');
+			        }
+			      });
+			    });
+			  </script>
 		 
 				<a class="return-top" href="#top">return to top</a>
 			</div>
@@ -83,7 +124,7 @@
 		
 			<h2>Catering</h2> 
 			
-			<img src="../images/catering.jpg" alt="Catering Plate samples" />
+			<img src="images/catering.jpg" alt="Catering Plate samples" />
 
 			<div class="div-margin"> 
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet. Fusce condimentum varius est, et venenatis.</p> 
@@ -152,7 +193,7 @@
 		
 			<h2>Contact</h2> 
 			
-			<img src="../images/mobile-contact.jpg" alt="Google Map" />
+			<img src="images/mobile-contact.jpg" alt="Google Map" />
 
 			<!--<img src="../images/contact.jpg" alt="Google Map" />-->
 
