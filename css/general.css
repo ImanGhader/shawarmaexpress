@@ -87,13 +87,14 @@ header {
 
 
 .nav {
-	padding: 3rem 0 0 0;
-	width: 100%;
+	padding: 1.5rem 0 0 0;
+	width: auto;
+	text-align: center;
 }
 .nav li,
 .nav li:link,
 .nav li:visited {
-	display: inline;
+	display: inline-block;
 	float: left;
 	width: auto;
 }
@@ -101,11 +102,11 @@ header {
 .nav a, 
 .nav a:link,
 .nav a:visited{
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 	display: block;
 	text-align: center;
-	width: 6.65rem;
-	padding: 0.5rem 0rem;
+	width: 80px;
+	padding: 0.5rem 0.7rem;
 	color: #e6b62b;
 	text-decoration: none;
 	background-color: #000;
@@ -121,15 +122,28 @@ header {
 	background-color: #A37A00;
 }
 
-/* Toggle Nav Styles*/
+@media only screen and (min-width: 20em){ /*320*/
+	.nav {
+		text-align: center;
+	}
 
+	.nav li {
+		float: none;
+	}
+	.nav a, 
+	.nav a:link,
+	.nav a:visited {
+		width: 100px;
+	}
 
-.nav-top{
-	display: none;
 }
 
-.nav-top[data-state="expanded"]{
-	display: block;
+@media only screen and (min-width: 48em){ /*768*/
+	.nav {
+		padding: 3rem 0 0 0;
+		width: 100%;
+		text-align: center;
+	}
 }
 
 /* --------------------------------------------- Home */
