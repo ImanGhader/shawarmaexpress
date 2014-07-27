@@ -39,7 +39,7 @@ img {
 h3 {
 	width: 100%;
 	padding: 1rem 0.9rem;
-	color: #fff;
+	color: #e6b62b;
 	text-transform: uppercase;
 	font-weight: 100;
 }
@@ -122,29 +122,6 @@ header {
 	background-color: #A37A00;
 }
 
-@media only screen and (min-width: 20em){ /*320*/
-	.nav {
-		text-align: center;
-	}
-
-	.nav li {
-		float: none;
-	}
-	.nav a, 
-	.nav a:link,
-	.nav a:visited {
-		width: 100px;
-	}
-
-}
-
-@media only screen and (min-width: 48em){ /*768*/
-	.nav {
-		padding: 3rem 0 0 0;
-		width: 100%;
-		text-align: center;
-	}
-}
 
 /* --------------------------------------------- Home */
 
@@ -176,7 +153,7 @@ h1 {
 }
 
 
-/*----------------------------------------------------- After home */
+/*------------------------------------------------------------------------------------- After home */
 
 h2 {
 	position: absolute;
@@ -222,7 +199,15 @@ p {
   visibility: hidden;
 }
 
+/* ----------------------------------------------- Catering */
+.coming-soon {
+	display: none;
+}
+
 /*-------------------------------------------------------------- Contact*/
+.desktop-contact {
+	display: none;
+}
 
 .contact {
 	text-transform: uppercase;
@@ -231,6 +216,54 @@ p {
 	font-weight: 400;
 }
 
+
+@media only screen and (min-width: 20em){ /*320*/
+	.nav {
+		text-align: center;
+	}
+
+	.nav li {
+		float: none;
+	}
+	.nav a, 
+	.nav a:link,
+	.nav a:visited {
+		width: 100px;
+	}
+
+}
+
+@media only screen and (min-width: 30em){ /*480*/
+	.mobile-contact {
+		display: none;
+	}
+
+	.desktop-contact {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 38.75em){ /*620*/
+	h3 {
+		text-align: center;
+	}
+}
+
+@media only screen and (min-width: 48em){ /*768*/
+
+	.div-margin {
+		margin: 1rem 5rem;
+	}
+
+	.coming-soon {
+		display: block;
+		position: absolute;
+		margin-top: 16rem;
+		left: 2rem;
+		width: 35%;
+	}
+
+}
 
 /* --------------------------------------------------------------------- Content */
 
