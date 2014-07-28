@@ -37,7 +37,8 @@ img {
 /*------------------------------------------------ Header*/
 
 .header-logo {
-	width: 30%;
+	width: 40%;
+	max-width: 120px;
 }
 
 header {
@@ -47,6 +48,7 @@ header {
 }
 
 .fixed-header{
+	overflow: hidden;
 	position: fixed;
 	display: block;
 	background-color: #000;
@@ -83,10 +85,13 @@ header {
 
 
 .nav {
-	padding: 1.5rem 0 0 0;
-	width: auto;
+	overflow: hidden;
+	padding: 4rem 0 0 0;
 	text-align: center;
+	width: 15rem; 
+	margin: auto; 
 }
+
 .nav li,
 .nav li:link,
 .nav li:visited {
@@ -116,6 +121,10 @@ header {
 .nav a:focus,
 .nav a:active{
 	background-color: #A37A00;
+}
+
+.fixed-nav {
+	display: none;
 }
 
 
@@ -190,7 +199,7 @@ p {
 
 .anchor{
   display: block;
-  height: 51px; /*same height as header*/
+  height: 44px; /*same height as header*/
   margin-top: -51px; /*same height as header*/
   visibility: hidden;
 }
@@ -212,19 +221,21 @@ p {
 	font-weight: 400;
 }
 
+@media only screen and (min-width: 25em){ /*400*/
 
-@media only screen and (min-width: 20em){ /*320*/
 	.nav {
+		overflow: hidden;
+		padding: 4rem 0 0 0;
 		text-align: center;
+		width: 25rem; 
+		margin: auto; 
 	}
 
-	.nav li {
-		float: none;
-	}
 	.nav a, 
 	.nav a:link,
-	.nav a:visited {
-		width: 100px;
+	.nav a:visited{
+		width: 133px;
+		display: block;
 	}
 
 }
@@ -239,31 +250,65 @@ p {
 	}
 }
 
-@media only screen and (min-width: 38.75em){ /*620*/
+@media only screen and (min-width: 37.5em){ /*600*/
 	h3 {
 		text-align: center;
 	}
 	
 	.fixed-header {
 		position: relative;
+		overflow: hidden;
+		display: block;
+		background-color: #000;
+		width: 100%;
+		z-index: 100;
 	}
 
-	.top-btn {
+	.top-btn,
+	.top-btn:link,
+	.top-btn:visited {
 		display: none;
 	}
 
 	.header-logo {
-		margin-top: 2rem;
-		margin-left:11rem;
-		width: 50%;
+		display: block;
+		margin: auto;
+		max-width: 50%;
 	}
 
-	/*.fixed-nav {
+	.nav {
+		overflow: hidden;
+		padding: 1rem 0 0 0;
+		text-align: center;
+		width: 38rem; /*stays*/
+		margin: auto; 
+	}
+
+	.nav a, 
+	.nav a:link,
+	.nav a:visited{
+		width: 100%;
+		padding: 0.5rem 1.5rem 0.5rem;
+		display: block;
+	}
+
+	.fixed-nav {
+		display: block;
 		position: fixed;
 		overflow: hidden;
-		background-color: #000;
+		text-align: center;
+		width: 43rem; /*stays*/
+		margin: auto;
+		top: 0;
+		left: 4.7rem;
+		z-index: -10;
+	}
+
+	.fixed-nav a, 
+	.fixed-nav a:link,
+	.fixed-nav a:visited{
 		width: 100%;
-		top: 0;*/
+		display: block;
 	}
 }
 
@@ -279,10 +324,6 @@ p {
 		margin-top: 16rem;
 		left: 2rem;
 		width: 35%;
-	}
-
-	.nav {
-		padding: 1rem;
 	}
 
 }

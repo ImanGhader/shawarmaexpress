@@ -91,9 +91,7 @@ html[xmlns] .slides {display: block;}
 .flex-control-thumbs .flex-active {opacity: 1; cursor: default; background: rgba(184,134,11,0.5);}
 
 .thumb-flexslider {
-	margin-bottom: 2rem;
-	margin: auto;
-	max-width: 80%;
+	max-width: 100%;
 
 }
 @media screen and (max-width: 860px) {
