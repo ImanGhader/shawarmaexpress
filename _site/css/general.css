@@ -18,6 +18,8 @@ html{
 }
 
 body {
+	position: relative;
+	top: 0;
 	background: url('../images/bg.png') repeat right top;
 	font-family: 'Roboto', sans-serif;
 	line-height: 1.2rem;
@@ -143,6 +145,9 @@ header {
 	overflow: auto;
 	background-image: url(../images/home.jpg);
 	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 	background-position: center center;
 	padding: 2rem 1rem;
@@ -169,11 +174,16 @@ h2 {
 	line-height: 2rem;
 	margin-bottom: 1rem;
 	display: block;
-	right: 10%;
+	right: 12%;
+	top: 5%;
 	color: #fff;
 	text-shadow: 2px 2px 2px #000;
 	padding: 1rem 0;
 	z-index: 10;
+}
+
+.relative {
+	position: relative;
 }
 
 .return-top {
@@ -201,9 +211,57 @@ p {
 
 .anchor{
   display: block;
-  height: 44px; /*same height as header*/
-  margin-top: -51px; /*same height as header*/
+  height: 36px; /*same height as header*/
+  margin-top: -36px; /*same height as header*/
   visibility: hidden;
+}
+
+#about-img {
+	background-image: url(../images/about.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: left top;
+	position: relative;
+}
+
+.about-p {
+	margin: 8rem 1.5rem 2rem;
+
+}
+
+.bg-img {
+	min-height: 300px;
+}
+
+.bg {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+#menu-img {
+	background-image: url(../images/menu.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+
+#catering-img {
+	background-image: url(../images/catering.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
 }
 
 /* ----------------------------------------------- Catering */
@@ -249,6 +307,10 @@ p {
 	.desktop-contact {
 		display: block;
 	}
+
+	.bg-img {
+		min-height: 400px;
+	}
 }
 
 @media only screen and (min-width: 37.5em){ /*600*/
@@ -280,11 +342,12 @@ p {
 		display: block;
 		margin: auto;
 		max-width: 50%;
+		margin-top: 3rem;
 	}
 
 	.nav {
 		overflow: hidden;
-		padding: 1rem 0 0 0;
+		padding: 0 0 0 0;
 		text-align: center;
 		width: 38rem; /*stays*/
 	}
@@ -296,45 +359,30 @@ p {
 		padding: 0.5rem 1.5rem 0.5rem;
 		display: block;
 	}
-
-	.secondnav {
-		overflow: hidden;
-		padding: 4rem 0 0 0;
-		text-align: center;
-		width: 25rem; 
-	}
-
-	.fixed-nav {
-		display: block;
+	
+	#fixed-nav {
 		position: fixed;
-		overflow: hidden;
-		text-align: center;
-		width: 43rem; /*stays*/
-		margin: auto;
-		top: 0;
-		z-index: 0;
+	    top: 0px;
+	    width: 100%;
+	    background: #000;
+	    z-index: 120;
+		border-top: 2px solid #A37A00;
 	}
 
-	.fixed-nav, 
-	.nav {
-		padding: 0;
+	.nav a, 
+	.nav a:link,
+	.nav a:visited{
+		border-top: none;
 	}
 
-	.fixed-nav a, 
-	.fixed-nav a:link,
-	.fixed-nav a:visited{
-		width: 100%;
-		display: block;
-	}
-
-	/*.about-circle {
+	.about-circle {
 		background-color: rgba(163,122,0,0.5);
 		border-radius: 400px;
 		width: 370px;
 		height: 370px;
 		position: absolute;
 		right: -4rem;
-		top: 50rem;
+		top: 0rem;
 	}
 
 	.about-text {
@@ -344,7 +392,9 @@ p {
 		line-height: 20px;
 		vertical-align: middle;
 		margin: 4rem 4rem;
-	}*/
+	}
+
+
 }
 
 @media only screen and (min-width: 48em){ /*768*/
@@ -356,11 +406,72 @@ p {
 	.coming-soon {
 		display: block;
 		position: absolute;
-		margin-top: 13rem;
+		margin-top: 10rem;
 		left: -8rem;
-		width: 80%;
+		width: 60%;
 	}
 
+	.bg-img {
+		min-height: 450px;
+	}
+
+	.contact-inline {
+		display: inline-block;
+	}
+
+	.contact-float1{
+		display: inline;
+		float: left;
+		width: 50%;
+		text-align: right;
+		padding-right: 2rem;
+		border-right: 2px solid #000;
+		margin-right: 0;
+	}
+
+	.contact-float2 {
+		display: inline;
+		float: left;
+		text-align: left;
+		margin-left: 2rem;
+	}
+
+}
+
+@media only screen and (min-width: 53.125em){ /*850*/
+	.div-margin {
+		margin: 3rem 5rem;
+	}
+
+	.bg-img {
+		min-height: 500px;
+		background-position: left center;
+	}
+
+	h2 {
+		font-size: 4rem;
+	}
+
+	.header-logo {
+		display: block;
+		max-width: 30%;
+	}
+
+}
+
+@media only screen and (min-width: 62.5em){ /*1000*/
+	.div-margin {
+		margin: 3rem 15rem;
+	}
+
+	#about-img {
+		min-height: 700px;
+	}
+
+	.bg-img {
+		min-height: 600px;
+		background-position: cente center;
+	}
 }
 
 /* --------------------------------------------------------------------- Content */
