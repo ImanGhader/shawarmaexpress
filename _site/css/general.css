@@ -173,6 +173,7 @@ h2 {
 	color: #fff;
 	text-shadow: 2px 2px 2px #000;
 	padding: 1rem 0;
+	z-index: 10;
 }
 
 .return-top {
@@ -194,7 +195,8 @@ p {
 }
 
 .div-margin {
-	margin: 1rem 2rem;
+	margin: 2rem 1.5rem;
+	position: relative;
 }
 
 .anchor{
@@ -228,7 +230,6 @@ p {
 		padding: 4rem 0 0 0;
 		text-align: center;
 		width: 25rem; 
-		margin: auto; 
 	}
 
 	.nav a, 
@@ -253,6 +254,11 @@ p {
 @media only screen and (min-width: 37.5em){ /*600*/
 	h3 {
 		text-align: center;
+	}
+
+	h2 {
+		font-size: 3rem;
+		font-weight: 300;
 	}
 	
 	.fixed-header {
@@ -281,7 +287,6 @@ p {
 		padding: 1rem 0 0 0;
 		text-align: center;
 		width: 38rem; /*stays*/
-		margin: auto; 
 	}
 
 	.nav a, 
@@ -292,6 +297,13 @@ p {
 		display: block;
 	}
 
+	.secondnav {
+		overflow: hidden;
+		padding: 4rem 0 0 0;
+		text-align: center;
+		width: 25rem; 
+	}
+
 	.fixed-nav {
 		display: block;
 		position: fixed;
@@ -300,8 +312,12 @@ p {
 		width: 43rem; /*stays*/
 		margin: auto;
 		top: 0;
-		left: 4.7rem;
-		z-index: -10;
+		z-index: 0;
+	}
+
+	.fixed-nav, 
+	.nav {
+		padding: 0;
 	}
 
 	.fixed-nav a, 
@@ -310,20 +326,39 @@ p {
 		width: 100%;
 		display: block;
 	}
+
+	/*.about-circle {
+		background-color: rgba(163,122,0,0.5);
+		border-radius: 400px;
+		width: 370px;
+		height: 370px;
+		position: absolute;
+		right: -4rem;
+		top: 50rem;
+	}
+
+	.about-text {
+		display: block;
+		color: #fff;
+		text-align: center;
+		line-height: 20px;
+		vertical-align: middle;
+		margin: 4rem 4rem;
+	}*/
 }
 
 @media only screen and (min-width: 48em){ /*768*/
 
 	.div-margin {
-		margin: 1rem 5rem;
+		margin: 3rem 3rem;
 	}
 
 	.coming-soon {
 		display: block;
 		position: absolute;
-		margin-top: 16rem;
-		left: 2rem;
-		width: 35%;
+		margin-top: 13rem;
+		left: -8rem;
+		width: 80%;
 	}
 
 }
