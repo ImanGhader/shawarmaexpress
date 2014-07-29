@@ -136,7 +136,6 @@ header {
 	width: 100%;
 	max-width: 50%;
 	margin: 5rem auto;
-	box-shadow: 2px 2px 2px #000;
 }
 
 #home {
@@ -471,8 +470,8 @@ p {
 }
 
 @media only screen and (min-width: 90em){ /*1440*/
-	.main {
-		max-width: 1440px;
+	.div-margin {
+		 	
 	}
 }
 
