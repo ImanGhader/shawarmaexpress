@@ -90,7 +90,7 @@ header {
 	overflow: hidden;
 	padding: 4rem 0 0 0;
 	text-align: center;
-	width: 15rem; 
+	width: 19rem; 
 	margin: auto; 
 }
 
@@ -108,7 +108,7 @@ header {
 	font-size: 0.9rem;
 	display: block;
 	text-align: center;
-	width: 80px;
+	width: 101px;
 	padding: 0.5rem 0.7rem;
 	color: #e6b62b;
 	text-decoration: none;
@@ -134,8 +134,9 @@ header {
 
 .home-logo {
 	width: 100%;
-	max-width: 40%;
-	margin: 5rem 4rem;
+	max-width: 50%;
+	margin: 5rem auto;
+	box-shadow: 2px 2px 2px #000;
 }
 
 #home {
@@ -168,18 +169,19 @@ h1 {
 h2 {
 	position: absolute;
 	font-family: 'Roboto', sans-serif;
-	font-weight: 100;
+	font-weight: 300;
 	font-size: 2rem;
 	text-transform: uppercase;
 	line-height: 2rem;
 	margin-bottom: 1rem;
 	display: block;
-	right: 12%;
-	top: 5%;
+	right: 2%;
 	color: #fff;
-	text-shadow: 2px 2px 2px #000;
-	padding: 1rem 0;
+	text-shadow: 2.5px 2.5px 1px #000;
+	padding: 1rem 3rem;
 	z-index: 10;
+	/*background-color: rgba(0,0,0,0.5);
+	border-radius: 35px;*/
 }
 
 .relative {
@@ -314,13 +316,11 @@ p {
 }
 
 @media only screen and (min-width: 37.5em){ /*600*/
-	h3 {
-		text-align: center;
-	}
 
 	h2 {
-		font-size: 3rem;
+		font-size: 3.5rem;
 		font-weight: 300;
+		top: 3%;
 	}
 	
 	.fixed-header {
@@ -330,19 +330,13 @@ p {
 		background-color: #000;
 		width: 100%;
 		z-index: 100;
+		height: 50px;
 	}
 
 	.top-btn,
 	.top-btn:link,
 	.top-btn:visited {
 		display: none;
-	}
-
-	.header-logo {
-		display: block;
-		margin: auto;
-		max-width: 50%;
-		margin-top: 3rem;
 	}
 
 	.nav {
@@ -356,7 +350,7 @@ p {
 	.nav a:link,
 	.nav a:visited{
 		width: 100%;
-		padding: 0.5rem 1.5rem 0.5rem;
+		padding: 0.5rem 1.3rem 0.5rem;
 		display: block;
 	}
 	
@@ -367,12 +361,14 @@ p {
 	    background: #000;
 	    z-index: 120;
 		border-top: 2px solid #A37A00;
+		font-size: 5rem;
 	}
 
 	.nav a, 
 	.nav a:link,
 	.nav a:visited{
 		border-top: none;
+		font-size: 1rem;
 	}
 
 	.about-circle {
@@ -473,6 +469,13 @@ p {
 		background-position: cente center;
 	}
 }
+
+@media only screen and (min-width: 90em){ /*1440*/
+	.main {
+		max-width: 1440px;
+	}
+}
+
 
 /* --------------------------------------------------------------------- Content */
 
