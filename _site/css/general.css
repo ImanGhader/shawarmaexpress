@@ -422,9 +422,9 @@ p {
 	.coming-soon {
 		display: block;
 		position: absolute;
-		margin-top: 10rem;
-		left: -8rem;
-		width: 60%;
+		margin-top: 12rem;
+		left: 1rem;
+		width: 33%;
 	}
 
 	.bg-img {
@@ -455,8 +455,9 @@ p {
 }
 
 @media only screen and (min-width: 53.125em){ /*850*/
-	.div-margin {
-		margin: 3rem 5rem;
+	.div-margin{
+		margin: 3rem auto;
+		width: 50rem;
 	}
 
 	.bg-img {
@@ -478,13 +479,15 @@ p {
 		margin: 10rem auto;
 	}
 
+	.contact-inline {
+		display: inline-block;
+		margin: 3rem 6rem;
+	}
+
 
 }
 
 @media only screen and (min-width: 62.5em){ /*1000*/
-	.div-margin {
-		margin: 3rem 15rem;
-	}
 
 	#about-img {
 		min-height: 700px;
@@ -494,11 +497,10 @@ p {
 		min-height: 600px;
 		background-position: cente center;
 	}
-}
 
-@media only screen and (min-width: 90em){ /*1440*/
-	.div-margin {
-		 	
+	.contact-inline {
+		display: inline-block;
+		margin: 3rem 20rem;
 	}
 }
 
