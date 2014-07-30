@@ -139,8 +139,7 @@ header {
 /* --------------------------------------------- Home */
 
 .home-logo {
-	width: 100%;
-	max-width: 80%;
+	width: 80%;
 	margin: 5rem auto;
 }
 
