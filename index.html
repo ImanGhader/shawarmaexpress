@@ -7,8 +7,10 @@
 
   		<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,400italic,500,700,900' rel='stylesheet' type='text/css'>	
  		<link href="css/reset.css" rel="stylesheet">
-		<link href="css/typography.css" rel="stylesheet">		
+		<link href="css/grid.css" rel="stylesheet">		
 		<link href="css/general.css" rel="stylesheet">
+		<link href="css/typography.css" rel="stylesheet">
+
 		<meta name="handheldfriendly" content="true">
 		<meta name="mobileoptimized" content="240">
 		<meta name="viewport" content="width=device-width,initial-scale=1" >
@@ -16,124 +18,86 @@
 
 <body id="top">
 	<header>
-		<div class="fixed-header">
-			<img class="header-logo" src="images/header-logo.svg">
-			<a href="#top" class="top-btn hide-text">Top</a>
-		</div>
 
 		<div id="fixed-nav">
 			<nav class="nav">
-				<ol>
+				<ul>
 					<li><a href="#top">Home</a></li>		
-					<li><a href="#about">About</a></li>
-					<li><a href="#menu">Menu</a></li>
-					<li><a href="#catering">Catering</a></li>
-					<li><a href="#gallery">Gallery</a></li>
-					<li><a href="#contact">Location</a></li>
-				</ol>
+					<li><a href="menu2.html">Menu</a></li>
+					<li><a href="catering.html">Catering</a></li>
+					<li><a href="#find-us">Find us</a></li>
+				</ul>
 			</nav>
 		</div>
+
 	</header>
-	
-	<main class="main">
 
+	<div class="hero">
 		<div id="home" > 
-		
+			
 			<img class="home-logo" src="images/home-logo.svg" alt="Shawarma logo"> 
-	 
-		</div>
-
-		<div class="div-margin">
-
-			<h1> Shawarma Express</h1>
-
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet. Fusce condimentum varius est, et venenatis tellus</p> 
-		</div>
-	
-<!-- ///////////////////////////////////////////////////////////////////////// About -->
-		<span class="anchor" id="about"></span>
-		<div class="relative"> 
-	
-			<h2>About</h2> 
-			
-			<div id="about-img" class="bg-img"> 
-				<img class="bg" src="images/about.jpg" alt="Store owner image"> 
-			</div>
-
-			<div class="div-margin">
-				<div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet.</p></div>
-
-	 		</div>
-		</div> <!-- Content 1 Close -->
-		
-<!-- ///////////////////////////////////////////////////////////////////////// Menu -->
-		<span class="anchor" id="menu"></span>
-		<div class="relative">
 		 
-			<h2>Menu</h2> 
-
-			<div id="menu-img" class="bg-img"> 
-				<img class="bg" src="images/menu.jpg" alt="Image of Sandwhich"> 
-			</div>
-
-			<div class="div-margin">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris.</p>
-
-		 
+		</div>
+	</div>
 		
-<!-- ///////////////////////////////////////////////////////////////////////// Catering -->
-		<span class="anchor" id="catering"></span>
-		<div class="relative"> 
-		
-			<h2>Catering</h2> 
-			
-			<div id="catering-img" class="bg-img"> 
-				<img class="coming-soon" src="images/coming-soon.svg" alt="Coming Soon Graphic" />
-
-				<img class="bg" src="images/catering.jpg" alt="Sample of catered plates"> 
-			</div>
-
-			<div class="div-margin"> 
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur molestie, purus nulla sagittis odio, eget dignissim metus diam non mauris. Fusce purus nulla, pretium vel elementum et, bibendum a metus. Vivamus varius purus sit amet neque vehicula id ultricies sapien laoreet. Fusce condimentum varius est, et venenatis.</p> 
-
-	 		</div>
-		</div> <!-- Content 3 Close -->
-
-<!-- ///////////////////////////////////////////////////////////// Gallery -->
-		
-
-<!-- ///////////////////////////////////////////////////////////// Contact -->
-		<span class="anchor" id="contact"></span>
-		<div class="relative"> 
-		
-				<h2>Location</h2> 
+	
+<!-- ///////////////////////////////////////////////////////////////////////// Wrapper -->
+		<div class="main grid">
+<!-- 			<span class="anchor" id="about"></span>-->			
+			<div class="about"> 
 				
-				<img class="mobile-contact" src="images/mobile-contact.jpg" alt="Google Map" />
+				<!-- <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+					<img class="img-flex chef" src="images/chef.jpg">
+				</div> -->
+				<hr class="section-line"> 
 
-				<img class="desktop-contact" src="images/desktop-contact.jpg" alt="Google Map" />
+				<div class="unit xs-1 s-1 m-1 l-1 xl-1 gutter">
+						<span>We are a family owned and run Lebanese restaurant specializing in shawarma sandwiches and dishes. A collection of home recipes bonding three generations of family over food is what started it all.</span>
+		 		</div>
+		 		
+		 		<hr class="section-line">
 
-			<div class="contact-inline div-margin">
-				<div class="contact-float1">
-					<p> Right across from Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tortor id felis volutpat tincidunt. Duis sed magna ac orci ullamcorper suscipit. Nullam interdum, neque a consectetur.</p>
+			</div> 
+
+			<span class="anchor" id="find-us"></span>
+			
+			<div> 
+
+				<div class="google-maps">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.419056145332!2d-75.69863318444398!3d45.42105327910036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05aac85f55e7%3A0x2ad3954183057aba!2sShawarma+Express!5e0!3m2!1sen!2sca!4v1457039492466" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
-				<div class="contact-float2">
-					<p class="contact">Shawarmaexpress@gmail.com<br>119 Slater St, Ottawa<br>ON K1P 5H2<br>(613) 232-2189</p>
+
+				<div class="find-us">
+					<div class=" unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+						<p>We are located in Centretown Ottawa, on 119 Slater street (Metclafe and Slater). A few minutes walk from Parliament Hill down on Metcalfe street.</p>
+					</div>
+
+					<div class="gutter unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+						<p>Shawarmaexpress@gmail.com<br>119 Slater St, Ottawa<br>ON K1P 5H2<br>(613) 232-2189</p>
+					</div>
 				</div>
+
 			</div>
 
 		</div>
-	
-	</div> <!-- Wrapper Close -->
-
 
 <!-- ///////////////////////////////////////////////////////////////////////// Footer -->
 
-	<footer class="footer">
+	<footer class="footer grid">
 
-		<p>© Shawarma Express 2014 by <a href="http://behance.net/imanghader"> IG </a></p> 
-	
-	</footer>	
+		<div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+			<p>Hours:
+			<br>Monday – Friday: 11am to 9:30pm
+			<br>(Check this page in December for winter hours)</p>
+		</div>
+
+		<div class="copyright unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+			<p>© Shawarma Express 2014 by <a href="http://imanghader.com"> IG </a></p> 
+		</div>
+
+	</footer>
+
 	<script src="js/nav.js"></script>
-	</main>
+
 </body>
 </html>

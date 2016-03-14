@@ -18,15 +18,38 @@ img {
 h4 {
 }
 
-#wrapper {
-	width: 70%;
-	margin: 0 auto;
+#menu-hero {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	overflow: auto;
+	background-image: url(../images/sandwiches/menu-hero.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	padding: 2rem 1rem;
+}
+
+#menu-hero h1{
+	margin: 8rem auto;
+}
+
+
+
+/* /////////////////////////////////////////////////////////////// Menu Contents */
+
+#menu-wrapper {
 	border: 2px solid red;
-	padding: 30px;
+	margin: 10px;
+	padding: 10px;
+	background-color: #fff;
 }
 
 .row-container {
-	margin-bottom: 0.5rem;
+	margin-bottom: 1rem;
 }
 
 .row-container li{
@@ -37,10 +60,11 @@ h4 {
 
 .row-container p {
 	margin: 5px 0 5px;
+	padding-right: 15px;
 }
 
 .row-container ul {
-	margin: 5px 0 10px;
+	margin: 5px 0;
 	overflow: hidden;
 }
 
@@ -66,9 +90,26 @@ h4 {
 	border-bottom: 2px solid #000;
 }
 
+
 .text-container li{
 	margin-right: 1rem;
 }
+
+.intro {
+	margin-bottom: 1rem;
+}
+
+.intro p{
+	margin: 0 0 0 0;
+}
+
+#menu-wrapper li::first-letter { 
+    font-size: 100%;
+    color: #000;
+    font-weight: 700;
+}
+
+
 
 
 /* /////////////////////////////////////////////////////////////////////////// Lightbox*/
@@ -216,6 +257,10 @@ h4 {
 	.row-container img {
 		max-width: 120px
 	}
+
+	.text-container li{
+	margin-bottom: 1rem;
+}
 
 }
 

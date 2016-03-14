@@ -24,16 +24,18 @@ body {
 	font-family: 'Roboto', sans-serif;
 	line-height: 1.2rem;
 	overflow-x: hidden;
+	display: block;
 }
 
+.img-flex {
+	display: block;
+    margin: 0 auto;
+    width: 100%;
+}
 
 .main {
-	width: 100%;
-	margin: 0 0;
-}
-
-img {
-	width: 100%;
+	width: 90%;
+	margin: 40px auto;
 }
 
 /*------------------------------------------------ Header*/
@@ -53,15 +55,6 @@ header {
 	overflow: hidden;
 }
 
-.fixed-header{
-	overflow: hidden;
-	position: fixed;
-	display: block;
-	background-color: #000;
-	width: 100%;
-	z-index: 90;
-	height: 5.5px;
-}
 
 .hide-text {
 	text-indent: 100%;
@@ -69,74 +62,45 @@ header {
 	overflow: hidden;
 }
 
-.top-btn,
-.top-btn:link,
-.top-btn:visited {
-	display: block;
-	height: 30px;
-	width: 30px;
-	position: absolute;
-	padding: 1rem;
-	right:5%;
-	top: 0px;
-	
-	background: #000 url('../images/top-btn.svg') no-repeat center center;
-	/* background-color || background-image || background-repeat || background-position*/
+#fixed-nav {
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	background-color: #000;
+	z-index: 1000;
 }
-
-.top-btn:hover,
-.top-btn:focus,
-.top-btn:active{
-	background-color: #A37A00;
-}
-
 
 .nav {
-	overflow: hidden;
-	padding: 0 0 0 0;
-	text-align: center;
-	width: 19rem; 
-	margin: 40px auto 0; 
+	 text-align: center;
 }
 
 .nav li,
 .nav li:link,
 .nav li:visited {
 	display: inline-block;
-	float: left;
-	width: auto;
+	font-size: 18px;
+	text-align: center;
+	padding: 10px 6px;
+	font-family: 'Roboto Slab', Serif;
 }
 
 .nav a, 
-.nav a:link,
-.nav a:visited{
-	font-size: 0.9rem;
-	display: block;
-	text-align: center;
-	width: 101px;
-	padding: 5.5px 0.7rem;
-	color: #e6b62b;
+.nav a:link {
 	text-decoration: none;
-	background-color: #000;
-	border-top: 1px solid #A37A00;
-	text-transform: uppercase;
-	font-weight: 300;
-	/* border-width || border-style || border-color */
+	color: #fff;
+	
 }
 
 .nav a:hover,
 .nav a:focus,
 .nav a:active{
-	background-color: #A37A00;
-}
-
-.fixed-nav {
-	display: none;
+	color: #E9B74B;
+	
 }
 
 
 
-/* --------------------------------------------- Home */
+/* ----------------------------------------------------------------------------------------- Hero */
 
 .home-logo {
 	width: 80%;
@@ -168,53 +132,54 @@ h1 {
 }
 
 
-.fixed-header {
-		position: fixed;
-		overflow: hidden;
-		display: block;
-		background-color: #000;
-		width: 100%;
-		z-index: 100;
-		height: 36px;
+
+/*------------------------------------------------------------------------------------- Main */
+
+.chef {
+	border-radius: 250px;
+	max-width: 300px;
 }
 
-
-/*------------------------------------------------------------------------------------- After home */
-
-h2 {
-	position: absolute;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
-	font-size: 2rem;
-	text-transform: uppercase;
-	line-height: 2rem;
-	margin-bottom: 1rem;
-	display: block;
-	right: 2%;
-	color: #fff;
-	text-shadow: 2.5px 2.5px 1px #000;
-	padding: 1rem 3rem;
-	z-index: 10;
-	/*background-color: rgba(0,0,0,0.5);
-	border-radius: 35px;*/
+.about {
+	margin-bottom: 30px;
+	padding: 20px;
 }
 
-.relative {
-	position: relative;
-}
-
-.return-top {
-	text-decoration: none;
-	text-transform: uppercase;
+.section-line {
 	color: #000;
+	background-color: #000;
+	height: 5px;
 }
 
-.return-top:hover,
-.return-top:focus,
-.return-top:active {
-	color: #e4e4e4;
+.about span{
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 19px;
+	line-height: 1.4;
+	font-family: 'Roboto Slab', Serif;
+	font-weight: 700;
 }
 
+.google-maps {
+	position: relative;
+	padding-bottom: 75%;
+	height: 0rem;
+	overflow: hidden;
+ }
+
+.google-maps iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.find-us {
+	margin-top: 20px;
+	font-weight: 500;
+}
 
 p {
 	margin-bottom: 1rem;
@@ -231,16 +196,6 @@ p {
   height: 36px; /*same height as header*/
   margin-top: -36px; /*same height as header*/
   visibility: hidden;
-}
-
-#about-img {
-	background-image: url(../images/about.jpg);
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background-position: left top;
-	position: relative;
 }
 
 .about-p {
@@ -261,35 +216,7 @@ p {
 	min-height: 100%;
 }
 
-#menu-img {
-	background-image: url(../images/menu.jpg);
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-	position: relative;
-}
-
-#catering-img {
-	background-image: url(../images/catering.jpg);
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-	position: relative;
-}
-
-/* ----------------------------------------------- Catering */
-.coming-soon {
-	display: none;
-}
-
 /*-------------------------------------------------------------- Contact*/
-.desktop-contact {
-	display: none;
-}
 
 .contact {
 	text-transform: uppercase;
@@ -299,20 +226,6 @@ p {
 }
 
 @media only screen and (min-width: 25em){ /*400*/
-
-	.nav {
-		overflow: hidden;
-		padding: 0 0 0 0;
-		text-align: center;
-		width: 25rem; 
-	}
-
-	.nav a, 
-	.nav a:link,
-	.nav a:visited{
-		width: 133px;
-		display: block;
-	}
 
 }
 
@@ -330,61 +243,14 @@ p {
 	}
 }
 
-@media only screen and (min-width: 37.5em){ /*600*/
+@media only screen and (min-width: 38em){ /*608*/
 
 	h2 {
 		font-size: 3.5rem;
 		font-weight: 300;
 		top: 3%;
 	}
-	
-	.fixed-header {
-		position: relative;
-		overflow: hidden;
-		display: block;
-		background-color: #000;
-		width: 100%;
-		z-index: 100;
-	}
 
-	.top-btn,
-	.top-btn:link,
-	.top-btn:visited {
-		display: none;
-	}
-
-	.nav {
-		overflow: hidden;
-		padding: 0 0 0 0;
-		text-align: center;
-		width: 38rem; /*stays*/
-		margin: 0 auto;
-	}
-
-	.nav a, 
-	.nav a:link,
-	.nav a:visited{
-		width: 100%;
-		padding: 0.5rem 1.3rem 0.5rem;
-		display: block;
-	}
-	
-	#fixed-nav {
-		position: fixed;
-	    top: 0px;
-	    width: 100%;
-	    background: #000;
-	    z-index: 120;
-		border-top: 2px solid #A37A00;
-		font-size: 5rem;
-	}
-
-	.nav a, 
-	.nav a:link,
-	.nav a:visited{
-		border-top: none;
-		font-size: 1rem;
-	}
 
 	.about-circle {
 		background-color: rgba(163,122,0,0.5);
@@ -413,48 +279,23 @@ p {
 
 }
 
-@media only screen and (min-width: 48em){ /*768*/
+@media only screen and (min-width: 60em){ /*960*/
+
+	.main {
+		width: 70%;
+	}
 
 	.div-margin {
 		margin: 3rem 3rem;
-	}
-
-	.coming-soon {
-		display: block;
-		position: absolute;
-		margin-top: 12rem;
-		left: 1rem;
-		width: 33%;
 	}
 
 	.bg-img {
 		min-height: 450px;
 	}
 
-	.contact-inline {
-		display: inline-block;
-	}
-
-	.contact-float1{
-		display: inline;
-		float: left;
-		width: 50%;
-		text-align: right;
-		padding-right: 2rem;
-		border-right: 2px solid #000;
-		margin-right: 0;
-	}
-
-	.contact-float2 {
-		display: inline;
-		float: left;
-		text-align: left;
-		margin-left: 2rem;
-	}
-
 }
 
-@media only screen and (min-width: 53.125em){ /*850*/
+@media only screen and (min-width: 90em){ /*1440*/
 	.div-margin{
 		margin: 3rem auto;
 		width: 50rem;
@@ -469,11 +310,6 @@ p {
 		font-size: 4rem;
 	}
 
-	.header-logo {
-		display: block;
-		max-width: 30%;
-	}
-
 	.home-logo {
 		max-width: 30rem;
 		margin: 10rem auto;
@@ -485,23 +321,6 @@ p {
 	}
 
 
-}
-
-@media only screen and (min-width: 62.5em){ /*1000*/
-
-	#about-img {
-		min-height: 700px;
-	}
-
-	.bg-img {
-		min-height: 600px;
-		background-position: cente center;
-	}
-
-	.contact-inline {
-		display: inline-block;
-		margin: 3rem 20rem;
-	}
 }
 
 
@@ -525,10 +344,13 @@ p {
 
 .footer{
 	background-color: #000;
-	text-align: right;
 	padding: 1rem;
 	color: #fff;
 	text-transform: uppercase;
+}
+
+.copyright {
+	text-align: right;
 }
 
 .footer p {
