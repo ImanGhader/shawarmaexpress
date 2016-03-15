@@ -62,7 +62,7 @@ img {
 }
 
 .row-container {
-	margin: 2rem 0;
+	margin: 1.5rem 0;
 }
 
 .row-container p {
@@ -152,6 +152,43 @@ img {
 	text-align: center;
 	padding: 12px;
 
+}
+
+.disclaimer {
+	text-align: center;
+	border: 2px dotted #000;
+	padding: 10px;
+	font-family: 'Roboto Slab', serif;
+}
+
+.disclaimer i {
+	margin-right: 6px;
+}
+
+.disclaimer li{
+	display: inline-block;
+	padding: 8px;
+}
+
+.vegan {
+	color: green;
+}
+
+.vegi {
+	color: yellow;
+}
+
+.fa-exclamation {
+	color: chocolate;
+}
+
+.sandwiches .row-container ul li::first-letter,
+.dishes-salads .row-container ul li::first-letter,
+.meal-deals .row-container ul li::first-letter,
+.original-sides .row-container ul li::first-letter {
+	font-size: 15px;
+	font-weight: 700;
+	margin-right: 2px;
 }
 
 

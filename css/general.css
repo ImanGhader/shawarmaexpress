@@ -225,6 +225,54 @@ p {
 	font-weight: 400;
 }
 
+/* --------------------------------------------------------------------- Content */
+
+.wrapper {
+	overflow: hidden; /* Will wrap around its children when they float */ 
+	padding-top: 4.5rem;
+}
+
+#content1, /* # hooks an ID */
+#content2,
+#content3,
+#content4 {
+	clear: both;   /* Will stack after each other if their children have floats */
+	padding: 6rem 10.25%;
+}
+
+
+/* --------------------------------------------------------------------- Footer */
+
+.footer{
+	background-color: #000;
+	padding: 1rem;
+	color: #fff;
+	text-transform: ;
+}
+
+.copyright {
+	text-align: left;
+}
+
+.hours {
+	margin-bottom: 20px;
+}
+
+.footer p {
+	margin-bottom:  0;
+}
+
+.footer a {
+	text-decoration: underline;
+	color: #fff;
+	line-height: 2rem;
+	padding-right: 13px;
+}	
+
+.footer i {
+	margin-right: 8px;
+}
+
 @media only screen and (min-width: 25em){ /*400*/
 
 }
@@ -240,6 +288,10 @@ p {
 
 	.bg-img {
 		min-height: 400px;
+	}
+
+	.copyright {
+		text-align: right;
 	}
 }
 
@@ -324,40 +376,3 @@ p {
 }
 
 
-/* --------------------------------------------------------------------- Content */
-
-.wrapper {
-	overflow: hidden; /* Will wrap around its children when they float */ 
-	padding-top: 4.5rem;
-}
-
-#content1, /* # hooks an ID */
-#content2,
-#content3,
-#content4 {
-	clear: both;   /* Will stack after each other if their children have floats */
-	padding: 6rem 10.25%;
-}
-
-
-/* --------------------------------------------------------------------- Footer */
-
-.footer{
-	background-color: #000;
-	padding: 1rem;
-	color: #fff;
-	text-transform: uppercase;
-}
-
-.copyright {
-	text-align: right;
-}
-
-.footer p {
-	margin-bottom:  0;
-}
-
-.footer a {
-	text-decoration: underline;
-	color: #fff;
-}	
