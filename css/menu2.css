@@ -102,8 +102,8 @@ img {
 	font-size: 14px;
 }
 
-#plates .ul-container ul {
-	text-align: left;
+.plates .ul-container ul {
+	text-align: right;
 }
 
 .section-line {
