@@ -15,12 +15,6 @@ img {
 	width: 100%;
 }
 
-/*h4 {
-	font-family: sans-serif;
-	font-weight: 400;
-	margin: 0 0;
-}*/
-
 #menu-wrapper {
 	width: 90%;
 	margin: 20px auto;
@@ -106,6 +100,7 @@ img {
 	text-align: right;
 }
 
+
 .section-line {
 	color: #000;
 	background-color: #000;
@@ -120,6 +115,11 @@ img {
 
 .section-intro {
 	margin: 15px 0;
+}
+
+.section-intro .script {
+	font-family: 'Satisfy', sans-serif;
+	font-size: 20px;
 }
 
 #sandwiches h2 {
@@ -189,6 +189,19 @@ img {
 	font-size: 15px;
 	font-weight: 700;
 	margin-right: 2px;
+}
+
+.other-goodies em {
+	font-size: 15px;
+	font-weight: 700;
+	margin-right: 2px;
+	margin-left: 0;
+}
+
+em {
+	font-size: 15px;
+	font-weight: 700;
+	margin-left: 4px;
 }
 
 
@@ -277,6 +290,8 @@ img {
 	}
 
 
+
+
 @media only screen and (max-width: 20em) {/* 320 */
 
 	.imagelightbox-arrow-left
@@ -308,6 +323,10 @@ img {
 	.row-container ul {
 		text-align: right;
 		margin-top: 0;
+	}
+
+	.indent {
+		padding-left: 20px;
 	}
 
 }
